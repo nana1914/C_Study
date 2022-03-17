@@ -11,18 +11,13 @@ int main ()
 {
     int N;
     scanf("%d", &N);
-
-    if (N<=100000)
-    {
+    if (N<=100000){
         for (int i=1; i<=N; i++)
-        {
             printf("%d\n", i);
-        }
     }
-    
-    else
-    {
+    else{
         printf("N을 다시 입력해주세요\n");
+         return main();
     }
 
     return 0;

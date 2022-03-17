@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -13,24 +12,18 @@ int main ()
     int N;
     scanf("%d", &N);
 
-    if ((N>=1) && (N<=100))
-    {
-        for (int i=0; i < N; i++)
-        {
-            for (int j=0; j < N; j++)
-            {
+    if ((N>=1) && (N<=100)) {
+        for (int i=0; i < N; i++) {
+            for (int j=0; j < N; j++) {
                if (j <= i)
-               { 
-               printf("*");
-               } 
+               printf("*"); 
             }
             printf("\n");
         }
-        
     }
-    else
-    {
+    else {
         printf("N을 다시 입력해주세요\n");
+        return main();
     }
     return 0;
 }
