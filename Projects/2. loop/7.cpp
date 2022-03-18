@@ -8,16 +8,13 @@
 
 int fn_triangle (int N);
 
-
-int main()
-{
+int main() {
     int N;
     scanf("%d", &N);
     return (fn_triangle(N)!=0)? -1:0;
 }
 
-int fn_triangle (int N)
-{
+int fn_triangle (int N) {
     if((N>=1) && (N<=100)) {
         for(int i=0; i<N; i++) {
             for(int j=0; j<i; j++)
